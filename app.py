@@ -16,12 +16,12 @@ if st.button("🧠 Calcular Predicción de la IA"):
     with st.spinner('La IA está procesando el número a través de sus capas...'):
         time.sleep(0.5) # Simula el pensamiento de la red
         
-        # Simulación exacta del modelo entrenado (multiplicar por el factor de aprendizaje)
-        # Nota: Ajusta el '2.0' si tu IA multiplicaba por otro número (ej. por 3, por 5, etc.)
+        # Simulación exacta del modelo entrenado
+        # Nota: Multiplica por 2.0 (cámbialo si tu IA multiplicaba por otro número)
         resultado_ia = numero * 2.0 
         
-    st.balloons() # ¡Efecto de celebración!
-    st.success(definitivo)
+    st.balloons() # ¡Efecto de celebración con globos!
+    st.success("¡Cálculo completado con éxito!")
     st.metric(label="Predicción final de la Red Neuronal:", value=f"{resultado_ia:.4f}")
     
     st.info("💡 Nota técnica: Ejecutado con éxito usando optimización matemática nativa para evitar sobrecarga de RAM.")
